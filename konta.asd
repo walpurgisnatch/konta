@@ -5,6 +5,9 @@
   :depends-on ()
   :components ((:module "src"
                 :components
-                ((:file "konta"))))
+                :serial t
+                ((:file "daemon")
+                 (:file "utils")
+                 (:file "konta"))))
   :description ""
   :in-order-to ((test-op (test-op "konta/tests"))))
