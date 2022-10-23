@@ -5,8 +5,8 @@
   :depends-on ("fsw"
                "pero")
   :components ((:module "src"
-                :components
                 :serial t
+                :components
                 ((:file "daemon")
                  (:file "utils")
                  (:file "konta"))))
