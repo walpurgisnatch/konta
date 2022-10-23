@@ -2,7 +2,8 @@
   :version "0.1.0"
   :author "Walpurgisnatch"
   :license "MIT"
-  :depends-on ()
+  :depends-on ("fsw"
+               "pero")
   :components ((:module "src"
                 :components
                 :serial t
