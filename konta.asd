@@ -9,6 +9,8 @@
                 :components
                 ((:file "daemon")
                  (:file "utils")
+                 (:file "time")
+                 (:file "job")
                  (:file "konta"))))
-  :description ""
+  :description "PDA"
   :in-order-to ((test-op (test-op "konta/tests"))))

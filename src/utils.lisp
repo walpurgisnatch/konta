@@ -1,8 +1,12 @@
 (in-package :cl-user)
 (defpackage konta.utils
-  (:use :cl))
+  (:use :cl)
+  (:export :sethash))
 
 (in-package :konta.utils)
+
+(defun sethash (table key value)
+  (setf (gethash key table) value))
 
 (defun defword ()
   (make-array 0

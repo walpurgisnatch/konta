@@ -3,7 +3,8 @@
   (:use :cl)
   (:export #:exit
            #:daemonize
-           #:fork))
+           #:fork
+           #:getpid))
 
 (in-package :konta.daemon)
 
