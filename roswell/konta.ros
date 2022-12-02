@@ -5,7 +5,7 @@ exec ros -Q -- $0 "$@"
 |#
 (progn ;;init forms
   (ros:ensure-asdf)
-  #+quicklisp(ql:quickload '(:konta) :silent t)
+  #+quicklisp(ql:quickload '(:pero :konta) :silent t)
   )
 
 (defpackage :ros.script.konta.3875515520
@@ -19,5 +19,5 @@ exec ros -Q -- $0 "$@"
         ((equal command "start") (konta:main))
         (t (format *standard-output* "~%Unknown command~%")))
     (error (e)
-      (format *standard-output* "~%Error: ~a~%" e)
+      (pero:write-line-to "~/konta.log" (format nil "~%Error: ~a~%" e))
       (uiop:quit -1))))

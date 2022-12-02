@@ -10,6 +10,7 @@
                 ((:file "daemon")
                  (:file "utils")
                  (:file "time")
+                 (:file "actions")
                  (:file "job")
                  (:file "konta"))))
   :description "PDA"
